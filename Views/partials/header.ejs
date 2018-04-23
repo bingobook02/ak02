@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deliver'Em</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+</head>
+<body>
+
+	<!-- Navbar -->
+<nav class="navbar">
+	<a class="navbar-brand" href="/">
+		<i class="fa fa-location-arrow fa-2x navicon"></i>
+	</a>
+	<form class="form-inline">
+		<% if (!currentUser) { %>
+			<a href="login"><button class="btn btn-sm btn-outline-secondary" type="button">Login</button></a>
+			<a href="register"><button class="btn btn-sm btn-outline-secondary" type="button">Register</button></a>
+		<% } else { %>
+			<a href="account" id="loginMsg">Signed In As <%= currentUser.username %></a>
+			<a href="logout"><button class="btn btn-sm btn-outline-secondary" type="button">Logout</button></a>
+		<% } %>
+</form>
+</nav>

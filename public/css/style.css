@@ -1,0 +1,256 @@
+/******************************************
+* General
+*******************************************/
+
+body {
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif !important;
+}
+
+#loginMsg {
+  color: white;
+  padding: 20px;
+}
+
+.navicon {
+  color: white !important;
+  padding-left: 15px;
+}
+
+/******************************************
+* Navbar
+*******************************************/
+
+.navbar {
+  background-color: #91ADE2;
+}
+
+.navbar button {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0;
+}
+
+.navbar button:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: #91ADE2;
+}
+
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px; /* firefox bug fix */
+  width: auto;
+}
+
+/******************************************
+* Header
+*******************************************/
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#content {
+  background-color: #4C4B63;
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+#content h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 5em;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+#content p {
+  color: white;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+
+hr {
+  width: 400px;
+  border-top: 1px solid #f8f8f8 !important;
+  border-bottom: 1px solid rgba(0,0,0,0.2) !important;
+}
+
+.btn-default {
+  background-color: transparent;
+  border: 1px solid white !important;
+  border-radius: 0 !important;
+  color: white !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.btn-default:hover {
+  border: 1px solid #4C4B63 !important;
+  background-color: white;
+  color: #4C4B63 !important;
+}
+
+/******************************************
+* APP
+*******************************************/
+
+#app-form {
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#app {
+  /*padding-bottom: 25px;*/
+  text-align: center;
+}
+
+#app p {
+  color: black;
+  font-size: 30px;
+}
+
+.form-control {
+  width: 500px !important;
+  margin: 0 auto;
+  border-radius: 0.5 !important;
+}
+
+.form-control:focus {
+  border-color: inherit !important;
+  -webkit-box-shadow: none !important!;
+  box-shadow: none !important;
+}
+
+.special {
+  padding-top: 20px;
+}
+label[for=addressLabel] {
+  font-size: 18px;
+}
+
+span > i {
+  color: white;
+}
+
+span > input {
+  background: none;
+  color: white;
+  padding: 0;
+  border: 0;
+}
+
+/******************************************
+* Map
+*******************************************/
+
+#myMap {
+  padding-top: 25px;
+  width: 100%;
+}
+/******************************************
+* Footer
+*******************************************/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/******************************************
+* Login Form
+*******************************************/
+
+#loginForm {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#loginForm p {
+  color: black;
+  font-size: 30px;
+}
+
+.form-control {
+  width: 500px !important;
+  margin: 0 auto;
+  border-radius: 0.5 !important;
+}
+
+.form-control:focus {
+  border-color: inherit !important;
+  -webkit-box-shadow: none !important!;
+  box-shadow: none !important;
+}
+
+
+/******************************************
+* Animations
+*******************************************/
+
+#typed-strings {
+  visibility: hidden;
+}
+
+#typed {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  margin-bottom: -20px;
+  trans
+}
+
+.typed-fade-out {}
+
+/******************************************
+* Account
+*******************************************/
+
+#accountContent {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/******************************************
+* Media Queries
+*******************************************/
+
+@media only screen and (max-width: 768px) {
+
+  #typed {
+    font-size: 24px;
+  }
+  .form-control {
+    width: 300px !important;
+  }
+  #content h1 {
+    font-size: 55px;
+  }
+  #content p {
+    font-size: 18px;
+  }
+  hr {
+    border-top: 1px solid #f8f8f8 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.2) !important;
+    width: 250px;
+  }
+}
